@@ -39,5 +39,16 @@ public class ArrayStack {
                       stackArray[position] + " to " + newValue);
     stackArray[position] = newValue;
 }
+// DELETE - Pop element from stack
+public int pop() {
+    if (isEmpty()) {
+        System.out.println("Stack underflow");
+        return -1;
+    }
+    int value = stackArray[top--];
+    System.out.println("Popped " + value + " from stack");
+    return value;
+}
+
 
 }
