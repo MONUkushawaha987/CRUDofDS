@@ -70,5 +70,20 @@ public void display() {
     }
     System.out.println();
 }
-
+ // Main method to test the stack
+ public static void main(String[] args) {
+    ArrayStack stack = new ArrayStack(5);
+    
+    // CRUD operations
+    stack.push(10);  // Create
+    stack.push(20);
+    stack.push(30);
+    
+    stack.peek();     // Read
+    
+    stack.update(1, 25); // Update (changes 20 to 25)
+    
+    stack.pop();      // Delete
+    stack.display();
+}
 }
