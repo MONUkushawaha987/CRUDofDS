@@ -10,4 +10,14 @@ public class ArrayStack {
         this.stackArray = new int[maxSize];
         this.top = -1;
     }
+     // CREATE - Push element onto stack
+     public void push(int value) {
+        if (isFull()) {
+            System.out.println("Stack overflow - cannot push " + value);
+            return;
+        }
+        stackArray[++top] = value;
+        System.out.println("Pushed " + value + " to stack");
+    }
+
 }
