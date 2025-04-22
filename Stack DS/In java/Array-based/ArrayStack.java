@@ -29,4 +29,15 @@ public class ArrayStack {
     return stackArray[top];
 }
 
+ // UPDATE - Modify element at position (non-standard stack operation)
+ public void update(int position, int newValue) {
+    if (position < 0 || position > top) {
+        System.out.println("Invalid position");
+        return;
+    }
+    System.out.println("Updating position " + position + " from " + 
+                      stackArray[position] + " to " + newValue);
+    stackArray[position] = newValue;
+}
+
 }
