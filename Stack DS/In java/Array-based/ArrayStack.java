@@ -50,5 +50,25 @@ public int pop() {
     return value;
 }
 
+// Utility methods
+public boolean isEmpty() {
+    return (top == -1);
+}
+
+public boolean isFull() {
+    return (top == maxSize - 1);
+}
+
+public void display() {
+    if (isEmpty()) {
+        System.out.println("Stack is empty");
+        return;
+    }
+    System.out.print("Stack (top to bottom): ");
+    for (int i = top; i >= 0; i--) {
+        System.out.print(stackArray[i] + " ");
+    }
+    System.out.println();
+}
 
 }
