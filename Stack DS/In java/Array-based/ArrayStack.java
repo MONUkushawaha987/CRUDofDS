@@ -19,5 +19,14 @@ public class ArrayStack {
         stackArray[++top] = value;
         System.out.println("Pushed " + value + " to stack");
     }
+ // READ - Peek at top element
+ public int peek() {
+    if (isEmpty()) {
+        System.out.println("Stack is empty");
+        return -1;
+    }
+    System.out.println("Top element is: " + stackArray[top]);
+    return stackArray[top];
+}
 
 }
