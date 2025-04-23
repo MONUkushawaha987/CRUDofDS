@@ -8,6 +8,14 @@ public class LinkedListStack {
             this.data = data;
             this.next = null;
         }
+        private Node top;
+        private int size;
+        
+        public LinkedListStack() {
+            this.top = null;
+            this.size = 0;
+        }
+    
     }
     
 }
