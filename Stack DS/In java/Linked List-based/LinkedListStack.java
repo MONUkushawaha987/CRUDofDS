@@ -68,5 +68,23 @@ public class LinkedListStack {
         return value;
     }
 
+     // Utility methods
+     public boolean isEmpty() {
+        return top == null;
+    }
     
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return;
+        }
+        System.out.print("Stack (top to bottom): ");
+        Node current = top;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
 }
