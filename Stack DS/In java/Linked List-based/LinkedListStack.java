@@ -86,5 +86,20 @@ public class LinkedListStack {
         }
         System.out.println();
     }
-
+ // Main method to test the stack
+ public static void main(String[] args) {
+    LinkedListStack stack = new LinkedListStack();
+    
+    // CRUD operations
+    stack.push(100);  // Create
+    stack.push(200);
+    stack.push(300);
+    
+    stack.peek();     // Read
+    
+    stack.update(1, 250); // Update (changes 200 to 250)
+    
+    stack.pop();      // Delete
+    stack.display();
+}
 }
