@@ -8,8 +8,12 @@ public class LinkedListStack {
             this.data = data;
             this.next = null;
         }
+
+    }
         private Node top;
         private int size;
+
+    
         
         public LinkedListStack() {
             this.top = null;
@@ -23,9 +27,34 @@ public class LinkedListStack {
         size++;
         System.out.println("Pushed " + value + " to stack");
     }
+     // READ - Peek at top element
+     public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        System.out.println("Top element is: " + top.data);
+        return top.data;
+    }
+
+
+     // UPDATE - Modify element at position (non-standard stack operation)
+     public void update(int position, int newValue) {
+        if (position < 0 || position >= size) {
+            System.out.println("Invalid position");
+            return;
+        }
+        
+        Node current = top;
+        for (int i = 0; i < position; i++) {
+            current = current.next;
+        }
+        System.out.println("Updating position " + position + " from " + 
+                          current.data + " to " + newValue);
+        current.data = newValue;
+    }
     
 
     
-    }
     
 }
