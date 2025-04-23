@@ -55,6 +55,18 @@ public class LinkedListStack {
     }
     
 
-    
+     // DELETE - Pop element from stack
+     public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack underflow");
+            return -1;
+        }
+        int value = top.data;
+        top = top.next;
+        size--;
+        System.out.println("Popped " + value + " from stack");
+        return value;
+    }
+
     
 }
