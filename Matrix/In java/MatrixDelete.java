@@ -20,7 +20,10 @@ public class MatrixDelete {
         System.out.println("\nAfter deleting column 2:");
         printMatrix(matrix);
         
-       
+        // Clear entire matrix
+        matrix = clearMatrix(matrix);
+        System.out.println("\nAfter clearing matrix:");
+        System.out.println("Matrix is " + (matrix == null ? "null" : "empty"));
     }
     
     public static int[][] deleteRow(int[][] matrix, int rowToDelete) {
