@@ -14,6 +14,15 @@ public class MatrixUpdate {
         System.out.println("\nAfter updating element at [1][1]:");
         printMatrix(matrix);
         
+        // Update entire row
+        updateRow(matrix, 0, new int[]{10, 20, 30});
+        System.out.println("\nAfter updating row 0:");
+        printMatrix(matrix);
+        
+        // Update entire column
+        updateColumn(matrix, 2, new int[]{33, 66, 99});
+        System.out.println("\nAfter updating column 2:");
+        printMatrix(matrix);
     }
     
     public static void updateElement(int[][] matrix, int row, int col, int newValue) {
