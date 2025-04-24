@@ -14,13 +14,21 @@ public class MatrixRead {
         int row = 1, col = 2;
         System.out.printf("\nElement at [%d][%d]: %d\n", row, col, matrix[row][col]);
         
-       
+        // Read a specific row
+        int rowToRead = 0;
+        System.out.printf("\nRow %d: ", rowToRead);
+        printRow(matrix, rowToRead);
+        
+        // Read a specific column
+        int colToRead = 1;
+        System.out.printf("\nColumn %d: ", colToRead);
+        printColumn(matrix, colToRead);
     }
     
     public static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int element : row) {
-                System.out.print(element + "\t");
+                System.out.print(element + "\t"); 
             }
             System.out.println();
         }
