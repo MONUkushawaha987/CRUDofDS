@@ -17,6 +17,10 @@ public class QueueDelete {
         System.out.println("Removed element: " + removed);
         System.out.println("Queue after poll(): " + queue);
         
+         // 2. Remove specific element
+         boolean removedGreen = queue.remove("Green");
+         System.out.println("Removed 'Green'? " + removedGreen);
+         System.out.println("Queue after remove(): " + queue);
        
     }
 }
