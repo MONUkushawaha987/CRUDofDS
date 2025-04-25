@@ -36,5 +36,15 @@ public class QueueDelete {
             numQueue.remove();
         }
         System.out.println("After safe removal: " + numQueue);
+
+        // 5. Remove all elements matching condition
+        Queue<Integer> numbers = new LinkedList<>() {{
+            add(15);
+            add(25);
+            add(30);
+            add(35);
+        }};
+        numbers.removeIf(num -> num > 30); // remove numbers > 30
+        System.out.println("After removeIf(): " + numbers);
     }
 }
