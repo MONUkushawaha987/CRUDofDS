@@ -16,7 +16,10 @@ public class QueueRead {
        // 2. Check if queue contains an element
        System.out.println("Contains 'Banana'? " + queue.contains("Banana"));
         
-        // 4. Print all elements (iteration)
+         // 3. Get queue size
+         System.out.println("Queue size: " + queue.size());
+       
+       // 4. Print all elements (iteration)
         System.out.println("\nAll queue elements:");
         for (String fruit : queue) {
             System.out.println(fruit);
