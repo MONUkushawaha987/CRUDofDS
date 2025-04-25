@@ -13,7 +13,8 @@ public class QueueRead {
         // 1. Peek at the front element (without removing)
         System.out.println("Front element: " + queue.peek());
        
-       
+       // 2. Check if queue contains an element
+       System.out.println("Contains 'Banana'? " + queue.contains("Banana"));
         
         // 4. Print all elements (iteration)
         System.out.println("\nAll queue elements:");
