@@ -26,5 +26,15 @@ public class QueueDelete {
         queue.clear();
         System.out.println("Queue after clear(): " + queue);
        
+        // 4. Safe removal (check before remove)
+        Queue<Integer> numQueue = new LinkedList<>() {{
+            add(100);
+            add(200);
+        }};
+        
+        if (!numQueue.isEmpty()) {
+            numQueue.remove();
+        }
+        System.out.println("After safe removal: " + numQueue);
     }
 }
