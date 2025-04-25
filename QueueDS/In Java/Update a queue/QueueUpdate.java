@@ -23,7 +23,14 @@ public class QueueUpdate {
         
         System.out.println("After updating first element: " + queue);
         
-       
+        // Update all elements (create new queue)
+        Queue<Integer> updatedQueue = new LinkedList<>();
+        for (int num : queue) {
+            updatedQueue.add(num + 5); // add 5 to each element
+        }
+        queue = updatedQueue;
+        
+        System.out.println("After updating all elements: " + queue);
         
         // Alternative approach for specific position (not recommended for Queue)
         // Convert to array, update, and rebuild queue
