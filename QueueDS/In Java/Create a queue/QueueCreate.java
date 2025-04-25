@@ -14,6 +14,13 @@ public class QueueCreate {
         
         System.out.println("Queue created: " + queue);
         
-       
+        // Alternative way to create and initialize
+        Queue<String> stringQueue = new LinkedList<>() {{
+            add("First");
+            add("Second");
+            add("Third");
+        }};
+        
+        System.out.println("String Queue: " + stringQueue);
     }
 }
