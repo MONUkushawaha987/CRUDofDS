@@ -25,6 +25,7 @@ public class QueueRead {
             System.out.println(fruit);
         }
         
-       
+         // 5. Check if queue is empty
+         System.out.println("Is queue empty? " + queue.isEmpty());
     }
 }
