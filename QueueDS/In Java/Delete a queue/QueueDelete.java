@@ -21,6 +21,10 @@ public class QueueDelete {
          boolean removedGreen = queue.remove("Green");
          System.out.println("Removed 'Green'? " + removedGreen);
          System.out.println("Queue after remove(): " + queue);
+
+         // 3. Clear entire queue
+        queue.clear();
+        System.out.println("Queue after clear(): " + queue);
        
     }
 }
