@@ -15,7 +15,14 @@ public class TreeCreate {
         // Creating a binary tree
         TreeNode root = new TreeNode(10);
         
-       
+        // Level 1
+        root.left = new TreeNode(20);
+        root.right = new TreeNode(30);
+        
+        // Level 2
+        root.left.left = new TreeNode(40);
+        root.left.right = new TreeNode(50);
+        root.right.left = new TreeNode(60);
         
         System.out.println("Binary tree created successfully!");
         System.out.println("Tree structure:");
