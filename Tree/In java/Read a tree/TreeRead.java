@@ -38,5 +38,11 @@ public class TreeRead {
         System.out.print(node.data + " ");
         inOrder(node.right);
     }
-  
+    // Post-order traversal
+    public void postOrder(TreeNode node) {
+        if (node == null) return;
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.print(node.data + " ");
+    }
 }
