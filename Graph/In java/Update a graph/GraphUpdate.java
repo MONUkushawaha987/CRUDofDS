@@ -58,6 +58,12 @@ public class GraphUpdate {
         // Update vertex
         graph.updateVertex(2, 5);
         
+        // Display updated graph
+        System.out.println("\nAfter Update:");
+        graph.printGraph();
         
+        // Try invalid updates
+        graph.updateVertex(10, 20); // Non-existent vertex
+        graph.updateVertex(1, 3);   // Existing new vertex
     }
 }
