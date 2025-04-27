@@ -63,6 +63,10 @@ public class GraphDelete {
         graph.removeEdge(1, 2);
         graph.removeEdge(1, 5); // Non-existent edge
         
-       
+        // Display after edge removal
+        System.out.println("\nAfter Edge Removal:");
+        graph.printGraph();
+        
+        
     }
 }
