@@ -43,6 +43,12 @@ public class GraphCreate {
         graph.addVertex(2);
         graph.addVertex(3);
         
-       
+        // Adding edges
+        graph.addEdge(1, 2);
+        graph.addEdge(2, 3);
+        graph.addEdge(3, 1);
+        
+        // Display graph
+        //graph.printGraph();
     }
 }
