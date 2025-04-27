@@ -59,6 +59,10 @@ public class GraphRead {
         graph.hasVertex(2);
         graph.hasVertex(5);
         
+        // Check edge existence
+        graph.hasEdge(1, 2);
+        graph.hasEdge(2, 1);
+        
         
     }
 }
