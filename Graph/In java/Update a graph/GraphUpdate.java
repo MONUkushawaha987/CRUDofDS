@@ -55,6 +55,9 @@ public class GraphUpdate {
         System.out.println("Initial Graph:");
         graph.printGraph();
         
+        // Update vertex
+        graph.updateVertex(2, 5);
+        
         
     }
 }
