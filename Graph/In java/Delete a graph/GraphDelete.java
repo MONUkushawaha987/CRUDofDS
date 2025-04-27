@@ -67,6 +67,11 @@ public class GraphDelete {
         System.out.println("\nAfter Edge Removal:");
         graph.printGraph();
         
+        // Remove vertex
+        graph.removeVertex(3);
         
+        // Display after vertex removal
+        System.out.println("\nAfter Vertex Removal:");
+        graph.printGraph();
     }
 }
