@@ -63,6 +63,8 @@ public class GraphRead {
         graph.hasEdge(1, 2);
         graph.hasEdge(2, 1);
         
-        
+        // Get neighbors
+        graph.getNeighbors(1);
+        graph.getNeighbors(4);
     }
 }
