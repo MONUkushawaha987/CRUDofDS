@@ -49,6 +49,6 @@ public class GraphCreate {
         graph.addEdge(3, 1);
         
         // Display graph
-        //graph.printGraph();
+        graph.printGraph();
     }
 }
