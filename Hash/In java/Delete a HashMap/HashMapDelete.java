@@ -12,6 +12,11 @@ public class HashMapDelete {
         studentScores.remove("Charlie");
         System.out.println("After removing Charlie: " + studentScores);
         
+        // Remove by key-value pair (only removes if both match)
+        boolean isRemoved = studentScores.remove("Bob", 88);
+        System.out.println("Was Bob removed? " + isRemoved);
+        System.out.println("After removing Bob: " + studentScores);
+        
        
     }
 }
