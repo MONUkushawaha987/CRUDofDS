@@ -11,6 +11,6 @@ public class HashMapRead {
         int aliceScore = studentScores.get("Alice");
         System.out.println("Alice's score: " + aliceScore);
         
-       
+        
     }
 }
