@@ -1,0 +1,14 @@
+import java.util.HashMap;
+
+public class HashMapUpdate {
+    public static void main(String[] args) {
+        HashMap<String, Integer> studentScores = new HashMap<>();
+        studentScores.put("Alice", 95);
+        studentScores.put("Bob", 88);
+        
+        // Update existing entry
+        studentScores.put("Bob", 90); // Overwrites the previous value
+        
+        
+    }
+}
