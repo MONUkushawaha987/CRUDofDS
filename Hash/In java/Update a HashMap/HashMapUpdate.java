@@ -12,6 +12,9 @@ public class HashMapUpdate {
         // Update only if key exists
         studentScores.replace("Alice", 97);
         
+        // Update only if key doesn't exist
+        studentScores.putIfAbsent("Charlie", 85);
         
+       
     }
 }
