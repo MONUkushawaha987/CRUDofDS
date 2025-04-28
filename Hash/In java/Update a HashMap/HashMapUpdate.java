@@ -9,6 +9,9 @@ public class HashMapUpdate {
         // Update existing entry
         studentScores.put("Bob", 90); // Overwrites the previous value
         
+        // Update only if key exists
+        studentScores.replace("Alice", 97);
+        
         
     }
 }
