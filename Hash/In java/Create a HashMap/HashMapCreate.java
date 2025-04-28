@@ -11,6 +11,7 @@ public class HashMapCreate {
         studentScores.put("Charlie", 76);
         studentScores.put("Diana", 92);
         
-        
+        // Display the HashMap
+        System.out.println("Student Scores: " + studentScores);
     }
 }
