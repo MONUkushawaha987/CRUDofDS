@@ -17,6 +17,8 @@ public class HashMapDelete {
         System.out.println("Was Bob removed? " + isRemoved);
         System.out.println("After removing Bob: " + studentScores);
         
-       
+        // Clear all entries
+        studentScores.clear();
+        System.out.println("After clear: " + studentScores);
     }
 }
