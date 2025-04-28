@@ -11,6 +11,14 @@ public class HashMapRead {
         int aliceScore = studentScores.get("Alice");
         System.out.println("Alice's score: " + aliceScore);
         
+        // Check if key exists
+        boolean hasBob = studentScores.containsKey("Bob");
+        System.out.println("Contains Bob? " + hasBob);
+        
+        // Check if value exists
+        boolean hasScore88 = studentScores.containsValue(88);
+        System.out.println("Contains score 88? " + hasScore88);
+        
         
     }
 }
