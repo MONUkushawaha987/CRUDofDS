@@ -19,6 +19,10 @@ public class HashMapRead {
         boolean hasScore88 = studentScores.containsValue(88);
         System.out.println("Contains score 88? " + hasScore88);
         
+        // Get all keys
+        System.out.println("All students: " + studentScores.keySet());
         
+        // Get all values
+        System.out.println("All scores: " + studentScores.values());
     }
 }
