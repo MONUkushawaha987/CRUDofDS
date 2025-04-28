@@ -15,6 +15,9 @@ public class HashMapUpdate {
         // Update only if key doesn't exist
         studentScores.putIfAbsent("Charlie", 85);
         
-       
+        // Conditional update
+        studentScores.replace("Bob", 90, 92); // Only updates if current value is 90
+        
+        System.out.println("Updated scores: " + studentScores);
     }
 }
